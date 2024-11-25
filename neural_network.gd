@@ -63,10 +63,3 @@ class Sequential:
 		for layer in layers:
 			output = layer.calculate_output(output)
 		return output
-
-
-## Creates a linear layer with parameters zeroed out
-func create_linear_layer(input_size: int, output_size: int) -> LinearLayer:
-	var linear_layer := LinearLayer.new()
-	linear_layer.init_with_zeroed_params(input_size, output_size)
-	return linear_layer
