@@ -6,15 +6,6 @@ class LinearLayer:
 	var weights: Array[Array]
 	var bias: Array[float]
 
-	func init_with_zeroed_params(input_size: int, output_size: int):
-		weights.resize(output_size)
-		bias.resize(output_size)
-		bias.fill(0)
-
-		for output_idx in weights.size():
-			weights[output_idx].resize(input_size)
-			weights[output_idx].fill(0)
-
 	func create(input_size: int, output_size: int) -> LinearLayer:
 		var layer := LinearLayer.new()
 		layer.weights.resize(output_size)
