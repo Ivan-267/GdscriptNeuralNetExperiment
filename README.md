@@ -5,7 +5,7 @@ Very basic Neural Network (inference only) implementation in Gdscript (Godot Eng
 This was written for learning purposes and experimenting with basic neural networks.
 There is no training functionality in the release, and the calculations are not optimized in any way.
 
-It supports adding a linear layer, and/or a tanh layer, an can calculate an array containing the results, given an input array.
+It supports adding linear/tanh layers into a sequential operation, and it can calculate an array with the results, given an input array.
 
 ### DISCLAIMER: 
 Not tested much yet, inacurrate results or other errors might happen. 
